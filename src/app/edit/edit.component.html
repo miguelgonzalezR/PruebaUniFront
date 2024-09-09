@@ -1,0 +1,21 @@
+<div>
+    <h2>Actualizar Producto</h2>
+    <form (submit)="updateProduct()">
+      <label>Nombre del Producto</label>
+      <input [(ngModel)]="updatedProduct.nombreProducto" name="nombreProducto" />
+  
+      <label>Descripción</label>
+      <input [(ngModel)]="updatedProduct.descripcionProducto" name="descripcionProducto" />
+  
+      <label>Precio</label>
+      <input type="number" [(ngModel)]="updatedProduct.precio" name="precio" />
+  
+      <label>Stock</label>
+      <input type="number" [(ngModel)]="updatedProduct.stock" name="stock" />
+  
+      <label>Fecha de Ingreso</label>
+      <input type="date" [(ngModel)]="updatedProduct.fechaIngreso" name="fechaIngreso" />
+  
+      <button type="submit">Actualizar Producto</button>
+    </form>
+  </div>

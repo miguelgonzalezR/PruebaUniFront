@@ -1,0 +1,22 @@
+<div>
+    <h2>Crear Producto</h2>
+    <form (submit)="createProduct()">
+      <label>Nombre del Producto</label>
+      <input [(ngModel)]="newProduct.nombreProducto" name="nombreProducto" />
+  
+      <label>Descripción</label>
+      <input [(ngModel)]="newProduct.descripcionProducto" name="descripcionProducto" />
+  
+      <label>Precio</label>
+      <input type="number" [(ngModel)]="newProduct.precio" name="precio" />
+  
+      <label>Stock</label>
+      <input type="number" [(ngModel)]="newProduct.stock" name="stock" />
+  
+      <label>Fecha de Ingreso</label>
+      <input type="date" [(ngModel)]="newProduct.fechaIngreso" name="fechaIngreso" />
+  
+      <button type="submit">Crear Producto</button>
+    </form>
+  </div>
+  
